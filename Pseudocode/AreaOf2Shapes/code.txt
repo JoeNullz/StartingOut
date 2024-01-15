@@ -1,7 +1,8 @@
-// program that lets use choose between 2 shapes to get their area
+// program that lets user choose between 2 shapes to get their area
 // triangle or rectangle
 // allow user to enter lengths of each one to calculate area
-// program validates that user doesnt choose number other than 1 or 3
+// program validates that user doesnt choose number other than 1 or 2
+// program validates that the user length width height and base are valid
 
 DECLARE num, length, width, base, height : REAL 
 //asking user to choose rectangle or Triangle 
