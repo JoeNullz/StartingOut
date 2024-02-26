@@ -1,0 +1,29 @@
+Num = [0,0,0,0,0,0,0,0,0,0]
+//input numbers and store in ARRAY
+//enter a value (searchValue)
+//code search for a PAIR of numbers in numbers stored in array that add up to entered value
+//code outputs the 2 numbers
+
+DECLARE Num: ARRAY[1:10] OF REAL 
+DECLARE SearchValue, TempSum : REAL 
+
+//inputting numbers 
+FOR count <- 1 to 10 
+    OUTPUT "enter your 10 numbers"
+    INPUT Num[count]
+NEXT 
+
+
+OUTPUT "enter your search value"
+INPUT SearchValue
+
+FOR pair <- 1 to 10 
+    FOR i <- 1 to 9
+        TempSum <- Numbers[pair] + Numbers[i]
+        IF TempSum = SearchValue
+            OUTPUT Numbers[pair], "+",  Numbers[i], "=", SearchValue
+        ENDIF 
+    NEXT 
+NEXT 
+
+    
