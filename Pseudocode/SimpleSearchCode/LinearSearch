@@ -1,0 +1,20 @@
+Numbers = [0,0,0,0,0,0]
+//Linear search 
+//to be used on https://pseudocode.deepjain.com/   not mine btw just a random pseudocode compiler
+DECLARE Numbers: ARRAY[1:5] FOR INTEGER
+DECLARE Presence : BOOLEAN 
+Presence <- FALSE 
+
+FOR count <- 1 to 5 
+    OUTPUT "enter a number", count
+    INPUT Numbers[count]
+    IF Numbers[count] = 10 THEN 
+        Presence <- TRUE 
+    ENDIF 
+NEXT 
+
+IF Presence = TRUE THEN 
+    OUTPUT "Found"
+ELSE  
+    OUTPUT "Missing"
+ENDIF 
