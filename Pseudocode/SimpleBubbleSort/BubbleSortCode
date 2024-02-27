@@ -1,0 +1,23 @@
+Temperatures = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,]
+//The 1D array Temperatures[] stores the hourly temperature of a day.
+//A day is 24 hours.
+//Write a program that would:
+//input the temperatures into the array
+//sort the array in descending order of temperatures
+
+DECLARE Temperatures[]: ARRAY[1:24] OF REAL 
+DECLARE Temp 
+FOR i <- 1 to 24 
+    OUTPUT "enter temperatures of each hour" , i 
+    INPUT Temperatures[i]
+NEXT 
+
+FOR element <- 1 to 24
+    FOR count <- 1 to 23
+        IF Temperatures[count] < Temperatures[count + 1] THEN 
+            Temp <- Temperatures[count]
+            Temperatures[count] <- Temperatures[count + 1]
+            Temperatures[count + 1] <- Temp 
+        ENDIF 
+    NEXT 
+NEXT 
